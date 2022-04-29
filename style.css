@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    height: 100vh;
+    margin: 0;
+    padding: 5px;
+}
+
+.bg {
+    background: url('images/Poss_img.jpeg') no-repeat center/cover;
+    background-attachment: fixed;
+    margin: auto;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100vw + 20px);
+    height: calc(100vh + 20px);
+    z-index: -1;
+    filter: blur(0px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    margin: 0;
+    margin-left: 70%;
+    margin-bottom: 20px;
+}
+
+header #logo {
+    font-size: 25px;
+    color: #6f42c1;
+    line-height: 25px;
+    letter-spacing: -3px;
+}
+
+/* Nav? */
+
+/* Buttons */
+.content-btns {
+    margin: 0;
+    padding:0;
+    margin-top: 75px; 
+    margin-bottom: -30px;
+}
+
+.btns {
+    /*border: 1px solid red;*/
+    background:inherit;
+    max-width: 80%;
+    width: 90%;
+    margin: 20px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    padding: 5px 12px;
+    z-index: 1;
+}
+
+.buttons {
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly; 
+    font-family: inherit;
+    color: #fff;
+}
+
+li {
+    width: 30vw;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    font-size: .5rem;
+}
+
+li img {
+    max-width: 84px;
+    max-height: 120px;
+    margin: 2px 5px;
+    padding: 0px 15px;  
+    border-radius: 33%;   
+
+}
+
+/* Showcase */
+ #showcase {
+    border-top: 10px;
+    width: 90%;
+    margin: 20px;
+    padding: 5px;
+    backdrop-filter: blur(1, 2);
+}
+
+.show-container {
+    background:inherit;
+    color: #484545;  
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 0;
+    border-radius: 10px;
+    padding: 5px 12px 20px 10px;
+    overflow: hidden;
+    z-index: 1;
+ }
+
+ .show-container:before {
+    content: '';
+    background:inherit;
+    position: absolute;
+    margin: -20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 1500px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.show-container h1 {
+    color: #6f42c1;
+    margin-top: 2px;
+    margin-left: 0;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: -3px;
+}
+
+/* flip the gradient opacity */
+.show-container p {
+    background: radial-gradient(circle, rgba(111,66,193,0.0980392156862745) 0%, rgba(102,16,242,0.6274509803921569) 100%);
+    background: blur;
+    margin-bottom: 3px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    color:rgb(194, 180, 194);
+    font-size: .75rem
+}
+
+
+/* Later: adjust for TABLET */
+@media (orientation: landscape) {
+    header {
+        margin: 0;
+        margin-top: -15px;
+        margin-left: 0;
+        margin-bottom: 2px;
+    }
+    .content-btns {
+        margin: 5px;
+        margin-top: 10px;
+        margin-left: 55px;
+        margin-bottom: -25px;
+        padding: 0;
+    }
+    li {
+        margin:-20px;
+        margin-top: 10px;margin-bottom: -10px;
+    }
+    #showcase {
+        font-size: .65rem;
+        margin: 2px;
+        margin-bottom: 1px;
+    }
+    .show-container p {
+        margin-top: .5px;
+        margin-bottom: -15px;
+    }
+  }
