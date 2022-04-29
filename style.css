@@ -38,11 +38,10 @@ header {
 header #logo {
     font-size: 25px;
     color: #6f42c1;
-    line-height: 25px;
-    letter-spacing: -3px;
+    line-height: 23px;
+    letter-spacing: -4px;
 }
 
-/* Nav? */
 
 /* Buttons */
 .content-btns {
@@ -53,7 +52,6 @@ header #logo {
 }
 
 .btns {
-    /*border: 1px solid red;*/
     background:inherit;
     max-width: 80%;
     width: 90%;
@@ -65,7 +63,6 @@ header #logo {
 }
 
 .buttons {
-    /*border: 1px solid red;*/
     display: flex;
     flex-direction:row;
     justify-content:space-evenly; 
@@ -74,21 +71,25 @@ header #logo {
 }
 
 li {
-    width: 30vw;
+    width: 33.3vw;
     margin:0;
     text-decoration: none;
     list-style: none;
-    font-size: .5rem;
+    font-size: .8rem;
+    color: #6f42c1
 }
+
+
 
 li img {
-    max-width: 84px;
-    max-height: 120px;
+    /*border: 1px solid blue;*/
+    width: 110px;
+    height: 100px;
     margin: 2px 5px;
     padding: 0px 15px;  
-    border-radius: 33%;   
-
+    border-radius: 100%;   
 }
+
 
 /* Showcase */
  #showcase {
@@ -158,14 +159,15 @@ li img {
     }
     .content-btns {
         margin: 5px;
-        margin-top: 10px;
+        margin-top: 1px;
         margin-left: 55px;
-        margin-bottom: -25px;
+        margin-bottom: -10px;
         padding: 0;
     }
     li {
-        margin:-20px;
-        margin-top: 10px;margin-bottom: -10px;
+        margin:-15x;
+        margin-top: -30px;
+        margin-bottom: -10px;
     }
     #showcase {
         font-size: .65rem;
