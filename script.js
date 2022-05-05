@@ -1,40 +1,25 @@
-/* Loading Component */
-const loadText = document.querySelector('.loading-text')
-const bg = document.querySelector('.bg')
+/* WELCOME BUTTON */
+const buttons = document.getElementById("ripple")
 
+buttons.forEach(button) => {
+    button.addEventListener('click', function(e) {
+        const x = e.clientX
+        const y = e.clientY
 
-let load = 0
+        const buttonTop = e.target.offsetTop
+        const buttonLeft = e.target.offsetLeft
 
-let int = setInterval(blurring, 30)
+        const xInside = x - buttonLeft
+        const yInside = y - buttonTop
 
-function blurring () {
-    load++
+        const circle = document.createElement('span')
+        circle.classList.add('circle')
 
-    if (load > 99) {
-        clearInterval(int)
-    }
+        circle.style.top = yInside + "px"
+        circle.style.left = xInside + "px"
 
-    loadText.innerText = `${load}%`
-    loadText.style.opacity = scale(load, 0, 100, 1, 0)
+        this.appendChild(circle)
 
-    bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
-
+        setTimeout(() => circle.remove(), 500)
+    })
 }
-
-const scale = (num, in_min, in_max, out_min, out_max)  => {
-    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-}
-
-/* Navbar 
-const nav = document.querySelector('.nav')
-
-window.addEventListener('scroll', fixNav)
-
-function fixNav() {
-    if(window.scrollY > nav.offsetHeight + 150) {
-        nav.classList.add('active')
-    } else {
-        nav.classList.remove('active')
-    }
-}
-*/

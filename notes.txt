@@ -1,8 +1,0 @@
-            <!-- BUTTONS -->
-            <section id="btns">
-                <div class="container-btns show-btns content-btn">
-                        <button>The Plan</button>
-                        <button>Strengthens</button>
-                        <button>Your Life</button>
-                </div>
-            </section>
