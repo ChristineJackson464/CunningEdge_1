@@ -13,9 +13,15 @@ body {
     color: #6f42c1
 }
 
+header {
+    background-color: rgba(151, 227, 151, 0.8);
+    margin: 0;
+    height: 20vh;
+}
+
 img{
-    margin-top: 0;
-    margin-left: 45%;
+    margin: 13%;
+    margin-left: 35%;
     padding: 25px;
     width: 200px;
     height: 200px;
@@ -24,13 +30,12 @@ img{
 
 /* Welcome/About Us link */
 .welcome {
-   border: 1px solid red;
-   margin: 10px;
+   /* border: 1px solid red; */
+   margin: 45px;
    width: 60%;;
 }
 
 .welcome p {
-    
     margin-top: -25px;
 }
 
